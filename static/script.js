@@ -46,16 +46,16 @@ const fakeAPICall = () => fetch('/api/delay');
 // Example 4: What if we chained a bunch of tasks after that async action?
 // setTimeout(() => {
 //     fakeAPICall()
-//         .then(longOperation);
-//         .then(longOperation);
-//         .then(longOperation);
+//         .then(longOperation)
+//         .then(longOperation)
+//         .then(longOperation)
 //         .then(longOperation);
 // });
 
 // Example 5: Let's add another async step back in
 // setTimeout(() => {
 //     fakeAPICall()
-//         .then(longOperation);
-//         .then(fakeAPICall);
+//         .then(longOperation)
+//         .then(fakeAPICall)
 //         .then(longOperation);
 // })
